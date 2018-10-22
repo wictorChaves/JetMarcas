@@ -10,6 +10,9 @@ import { TopComponent } from './main/top/top.component';
 import { HeadComponent } from './main/head/head.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MenuComponent } from './main/top/menu/menu.component';
+import { ApresentationComponent } from './apresentation/apresentation.component';
+import { RegisterComponent } from './register/register.component';
+import { SearchComponent } from './register/search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MenuComponent } from './main/top/menu/menu.component';
     TopComponent,
     HeadComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    ApresentationComponent,
+    RegisterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
