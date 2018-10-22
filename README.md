@@ -1,4 +1,10 @@
-# JetMarcas
+<p align="center"><img src="https://raw.githubusercontent.com/wictorChaves/JetMarcas/50794678c3c1223c703ce2c8cf5496096c516ac9/src/assets/logo-top.png"></p>
+
+# Jet Marcas
+
+Verify if your name are available in multi web sites
+
+## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
