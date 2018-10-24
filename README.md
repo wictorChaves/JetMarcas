@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/wictorChaves/JetMarcas/master/src/assets/logo-top.png"></p>
+<p><img src="https://raw.githubusercontent.com/wictorChaves/JetMarcas/master/src/assets/logo-top.png"></p>
 
 # Jet Marcas
 
