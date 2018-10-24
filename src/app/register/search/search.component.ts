@@ -1,30 +1,24 @@
-import { AccountYoutubeService } from './../../services/accountYoutube.service';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'],
-  providers: [AccountYoutubeService]
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
 
-  @Output() google = new EventEmitter<boolean>();
+  @Output() searchValue = new EventEmitter<string>();
 
   public fieldSearchValue: string = '';
 
-  constructor(private accountYoutubeService: AccountYoutubeService) { }
+  constructor() { }
 
   ngOnInit() {
 
   }
 
   clickSearch() {
-    this.accountYoutubeService.userExist(this.fieldSearchValue)
-      .then((information: boolean) => {
-        this.google.emit(information);
-        console.log(information);
-      });
+    this.searchValue.emit(this.fieldSearchValue);
   }
 
   onKeySearch(event: any) {
