@@ -13,6 +13,8 @@ import { MenuComponent } from './main/top/menu/menu.component';
 import { ApresentationComponent } from './apresentation/apresentation.component';
 import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './register/search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './register/card/card.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { SearchComponent } from './register/search/search.component';
     MenuComponent,
     ApresentationComponent,
     RegisterComponent,
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
