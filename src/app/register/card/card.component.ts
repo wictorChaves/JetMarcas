@@ -4,19 +4,22 @@ import { Card } from 'src/app/shared/card.model';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: [
+    './card.component.css',
+    './loading.component.css'
+  ]
 })
 export class CardComponent implements OnInit {
 
   @Input() card: Card;
-  public activeCard: string = '';
+  public status: string = '';
 
   constructor() {
-    
+
   }
 
   ngOnInit() {
-    this.activeCard = (this.card.isActive) ? 'active' : '';
+    this.status = this.card.status;
   }
 
 }
