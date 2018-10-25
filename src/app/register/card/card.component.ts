@@ -19,7 +19,11 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.status = this.card.status;
+    this.updateStatus(this.card.status);
+  }
+
+  updateStatus(status){
+    this.status = status;
   }
 
 }

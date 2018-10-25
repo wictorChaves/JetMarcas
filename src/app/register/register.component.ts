@@ -1,24 +1,24 @@
-import { AccountYoutubeService } from './../services/accountYoutube.service';
 import { Card } from './../shared/card.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css'],
-  providers: [AccountYoutubeService]
+  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
 
+  @ViewChild('card') card;
+
   public cards: Card[] = [];
   public inforCards: any[] = [];
+  public searchValue = '';
 
-  constructor(private accountYoutubeService: AccountYoutubeService) {
+  constructor() {
     this.inforCards = [
       { 'id': 1, 'image': 'assets/cards/instagram.png', 'url': 'https://www.instagram.com/', 'status': 'active', 'description': 'descrição' },
       { 'id': 2, 'image': 'assets/cards/facebook.png', 'url': 'http://www.facebook.com/', 'status': 'inactive', 'description': 'descrição' },
-      { 'id': 3, 'image': 'assets/cards/youtube.png', 'url': 'https://www.youtube.com/', 'status': 'loading', 'description': 'descrição' },
-      { 'id': 4, 'image': 'assets/cards/twitter.png', 'url': 'https://www.twitter.com/', 'status': 'active', 'description': 'descrição' },
+      { 'id': 4, 'image': 'assets/cards/twitter.png', 'url': 'https://www.twitter.com/', 'status': 'loading', 'description': 'descrição' },
     ];
     this.fillObjsCards();
   }
@@ -34,15 +34,7 @@ export class RegisterComponent implements OnInit {
   }
 
   searchEvent(searchValue: string) {
-    this.accountYoutubeService.userExist(searchValue)
-      .then((exist: boolean) => {
-        if (exist) {
-          //this.inforCards[2].isActive = true;
-        } else {
-          //this.inforCards[2].isActive = false;
-        }
-        this.fillObjsCards();
-      });
+    this.card.searchEvent(searchValue);
   }
 
 }

@@ -15,6 +15,7 @@ import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './register/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './register/card/card.component';
+import { YoutubeComponent } from './register/account/youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CardComponent } from './register/card/card.component';
     ApresentationComponent,
     RegisterComponent,
     SearchComponent,
-    CardComponent
+    CardComponent,
+    YoutubeComponent
   ],
   imports: [
     BrowserModule,

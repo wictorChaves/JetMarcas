@@ -1,11 +1,14 @@
 <app-search (searchValue)="searchEvent($event)"></app-search>
 <div class="container">
   <div class="panel panel-default">
-      <h2 class="text-center">A sua marca esta disponível nas seguintes redes</h2>
+    <h2 class="text-center">A sua marca esta disponível nas seguintes redes</h2>
   </div>
 </div>
-<br/>
+<br />
 <div class="row">
+  <div class="col">
+    <app-youtube #card></app-youtube>
+  </div>
   <div *ngFor="let card of cards" class="col">
     <app-card [card]="card"></app-card>
   </div>
