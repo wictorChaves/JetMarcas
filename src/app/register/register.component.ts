@@ -8,7 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  @ViewChild('card') card;
+  @ViewChild('domain') domain;
+  @ViewChild('youtube') youtube;
 
   public cards: Card[] = [];
   public inforCards: any[] = [];
@@ -34,7 +35,8 @@ export class RegisterComponent implements OnInit {
   }
 
   searchEvent(searchValue: string) {
-    this.card.searchEvent(searchValue);
+    this.domain.searchEvent(searchValue);
+    this.youtube.searchEvent(searchValue);
   }
 
 }

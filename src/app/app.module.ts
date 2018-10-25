@@ -16,6 +16,7 @@ import { SearchComponent } from './register/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './register/card/card.component';
 import { YoutubeComponent } from './register/account/youtube/youtube.component';
+import { DomainComponent } from './register/account/domain/domain.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { YoutubeComponent } from './register/account/youtube/youtube.component';
     RegisterComponent,
     SearchComponent,
     CardComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    DomainComponent
   ],
   imports: [
     BrowserModule,

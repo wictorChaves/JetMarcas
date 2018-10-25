@@ -7,8 +7,12 @@
 <br />
 <div class="row">
   <div class="col">
-    <app-youtube #card></app-youtube>
+    <app-domain #domain></app-domain>
   </div>
+  <div class="col">
+    <app-youtube #youtube></app-youtube>
+  </div>
+
   <div *ngFor="let card of cards" class="col">
     <app-card [card]="card"></app-card>
   </div>
