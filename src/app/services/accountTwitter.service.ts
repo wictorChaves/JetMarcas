@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class AccountYoutubeService extends ApiService {
+export class AccountTwitterService extends ApiService {
 
-  private url = `https://www.googleapis.com/youtube/v3/channels?key=` + Tokens.google + `&forUsername=`;
+  private url = ``;
 
   constructor(private http: HttpClient) {
     super();
@@ -18,11 +18,7 @@ export class AccountYoutubeService extends ApiService {
       return super.fakeApi(username);
     }
 
-    return this.http.get(this.url + `${username}&part=id`)
-      .toPromise()
-      .then((resposta: any) => {
-        return resposta.items.length > 0;
-      });
+    return super.fakeApi(username);
 
   }
 }
