@@ -17,6 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './register/card/card.component';
 import { YoutubeComponent } from './register/account/youtube/youtube.component';
 import { DomainComponent } from './register/account/domain/domain.component';
+import { FacebookComponent } from './register/account/facebook/facebook.component';
+import { TwitterComponent } from './register/account/twitter/twitter.component';
+import { InstagramComponent } from './register/account/instagram/instagram.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { DomainComponent } from './register/account/domain/domain.component';
     SearchComponent,
     CardComponent,
     YoutubeComponent,
-    DomainComponent
+    DomainComponent,
+    FacebookComponent,
+    TwitterComponent,
+    InstagramComponent
   ],
   imports: [
     BrowserModule,

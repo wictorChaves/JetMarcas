@@ -6,14 +6,22 @@
 </div>
 <br />
 <div class="row">
-  <div class="col">
+  <div class="col-sm-3">
     <app-domain #domain></app-domain>
   </div>
-  <div class="col">
+  <div class="col-sm-3">
     <app-youtube #youtube></app-youtube>
   </div>
-
-  <div *ngFor="let card of cards" class="col">
-    <app-card [card]="card"></app-card>
+  <div class="col-sm-3">
+    <app-facebook #facebook></app-facebook>
+  </div>
+  <div class="col-sm-3">
+    <app-twitter #twitter></app-twitter>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-sm-3">
+    <app-instagram #instagram></app-instagram>
   </div>
 </div>
