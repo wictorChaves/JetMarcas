@@ -16,7 +16,7 @@ export class InstagramComponent implements OnInit {
   constructor(private accountInstagramService: AccountInstagramService) { }
 
   ngOnInit() {
-    this.card.card = new Card(1, 'assets/cards/instagram.png', 'https://www.instagram.com/', 'inactive', '');
+    this.card.card = new Card(1, 'assets/cards/instagram.png', 'https://www.instagram.com/', 'active', '');
   }
 
   searchEvent(searchValue: string) {

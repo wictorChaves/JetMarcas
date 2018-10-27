@@ -16,7 +16,7 @@ export class DomainComponent implements OnInit {
   constructor(private availableDomain: AvailableDomain) { }
 
   ngOnInit() {
-    this.card.card = new Card(5, 'assets/cards/domain.png', '#', 'inactive', '');
+    this.card.card = new Card(5, 'assets/cards/domain.png', '#', 'active', '');
   }
 
   searchEvent(searchValue: string) {

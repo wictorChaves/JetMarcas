@@ -18,7 +18,7 @@ export class YoutubeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.card.card = new Card(3, 'assets/cards/youtube.png', 'https://www.youtube.com/', 'inactive', '');
+    this.card.card = new Card(3, 'assets/cards/youtube.png', 'https://www.youtube.com/', 'active', '');
   }
 
   searchEvent(searchValue: string) {

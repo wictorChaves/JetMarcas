@@ -20,6 +20,9 @@ import { DomainComponent } from './register/account/domain/domain.component';
 import { FacebookComponent } from './register/account/facebook/facebook.component';
 import { TwitterComponent } from './register/account/twitter/twitter.component';
 import { InstagramComponent } from './register/account/instagram/instagram.component';
+import { GmailComponent } from './register/account/gmail/gmail.component';
+import { HotmailComponent } from './register/account/hotmail/hotmail.component';
+import { InpiComponent } from './register/account/inpi/inpi.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { InstagramComponent } from './register/account/instagram/instagram.compo
     DomainComponent,
     FacebookComponent,
     TwitterComponent,
-    InstagramComponent
+    InstagramComponent,
+    GmailComponent,
+    HotmailComponent,
+    InpiComponent
   ],
   imports: [
     BrowserModule,

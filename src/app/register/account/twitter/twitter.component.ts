@@ -16,7 +16,7 @@ export class TwitterComponent implements OnInit {
   constructor(private accountTwitterService: AccountTwitterService) { }
 
   ngOnInit() {
-    this.card.card = new Card(1, 'assets/cards/twitter.png', 'https://www.twitter.com/', 'inactive', '');
+    this.card.card = new Card(1, 'assets/cards/twitter.png', 'https://www.twitter.com/', 'active', '');
   }
 
   searchEvent(searchValue: string) {

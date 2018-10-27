@@ -16,7 +16,7 @@ export class FacebookComponent implements OnInit {
   constructor(private accountFacebookService: AccountFacebookService) { }
 
   ngOnInit() {
-    this.card.card = new Card(1, 'assets/cards/facebook.png', 'https://www.facebook.com/', 'inactive', '');
+    this.card.card = new Card(1, 'assets/cards/facebook.png', 'https://www.facebook.com/', 'active', '');
   }
 
   searchEvent(searchValue: string) {

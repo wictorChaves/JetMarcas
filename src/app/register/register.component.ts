@@ -12,6 +12,9 @@ export class RegisterComponent implements OnInit {
   @ViewChild('facebook') facebook;
   @ViewChild('twitter') twitter;
   @ViewChild('instagram') instagram;
+  @ViewChild('gmail') gmail;
+  @ViewChild('hotmail') hotmail;
+  @ViewChild('inpi') inpi;
 
   public searchValue = '';
 
@@ -27,6 +30,9 @@ export class RegisterComponent implements OnInit {
     this.facebook.searchEvent(searchValue);
     this.twitter.searchEvent(searchValue);
     this.instagram.searchEvent(searchValue);
+    this.gmail.searchEvent(searchValue);
+    this.hotmail.searchEvent(searchValue);
+    this.inpi.searchEvent(searchValue);
   }
 
 }
