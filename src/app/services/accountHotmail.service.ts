@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class AccountHotmailService extends ApiService {
 
-  private url = ``;
+  private url = 'https://apilayer.net/api/check?access_key=' + Tokens.emails + '&email=';
 
   constructor(private http: HttpClient) {
     super();
@@ -18,7 +18,11 @@ export class AccountHotmailService extends ApiService {
       return super.fakeApi(username);
     }
 
-    return super.fakeApi(username);
+    return this.http.get(this.url + `${username}@gmail.com`)
+      .toPromise()
+      .then((resposta: any) => {
+        return resposta.smtp_check;
+      });
 
   }
 }
