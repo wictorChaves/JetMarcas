@@ -26,7 +26,6 @@ export class AccountFacebookService extends ApiService {
     return this.http.get(this.url + `${username}/picture`)
       .toPromise()
       .then((resposta: any) => {
-        console.log(resposta);
         return resposta;
       }).catch(this.handleError);
 
