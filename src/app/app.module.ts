@@ -45,7 +45,7 @@ import { InpiComponent } from './register/account/inpi/inpi.component';
     InstagramComponent,
     GmailComponent,
     HotmailComponent,
-    InpiComponent
+    InpiComponent,
   ],
   imports: [
     BrowserModule,
