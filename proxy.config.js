@@ -1,8 +1,8 @@
 const proxy = [
     {
-      context: '/tmview/search-tmv',
-      target: 'https://www.tmdn.org',
-      pathRewrite: {'^/tmview/search-tmv' : ''}
+      context: '/api/inpi/test',
+      target: 'http://127.0.0.1:8000',
+      pathRewrite: {'^/api/inpi/test' : ''}
     }
   ];
   module.exports = proxy;

@@ -6,7 +6,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 @Injectable()
 export class RegisterInpiService extends ApiService {
 
-  private url = 'https://www.tmdn.org/tmview/search-tmv?_search=false&nd=1540562034603&rows=10&page=1&sidx=tm&sord=asc&q=tmsort:%22';
+  private url = 'http://127.0.0.1:8000/api/inpi/';
 
   constructor(private http: HttpClient) {
     super();
@@ -17,14 +17,13 @@ export class RegisterInpiService extends ApiService {
     return error;
   };
 
-  public userExist(username: string): Promise<any> {
+  public userExist(brand: string): Promise<any> {
 
-    return this.http.get(this.url + username + '%22&fq=[]&pageSize=10&facetQueryType=2&providerList=null&expandedOffices=null&interfacelanguage=en&selectedRowRefNumber=null')
+    return this.http.get(this.url + brand)
       .toPromise()
       .then((resposta: any) => {
         console.log('Aqui: ');
         console.log(resposta);
-        console.log(resposta.facetFields.facets.oc.ocurrences.BR);
         return resposta;
       }).catch(this.handleError);
       
