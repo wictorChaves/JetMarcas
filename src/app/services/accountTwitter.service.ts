@@ -5,32 +5,23 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 @Injectable()
 export class AccountTwitterService extends ApiService {
 
-  private url = `https://twitter.com/users/username_available?username=`;
+  private url = 'http://127.0.0.1:8000/api/twitter/';
 
   constructor(private http: HttpClient) {
     super();
   }
 
-  private handleError(error: HttpErrorResponse) {
-    console.log(error);
-    return !error;
-  };
-
   public userExist(username: string): Promise<any> {
-
-    /*
-    return this.http.get(this.url + `${username}`)
-      .toPromise()
-      .then((resposta: any) => {
-        console.log(resposta);
-        return resposta;
-      }).catch(this.handleError);*/
 
     if (this.debug) {
       return super.fakeApi(username);
     }
 
-    return super.fakeApi(username);
+    return this.http.get(this.url + username)
+      .toPromise()
+      .then((resposta: any) => {
+        return resposta;
+      });
 
   }
 }
