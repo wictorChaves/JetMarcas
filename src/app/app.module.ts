@@ -23,6 +23,8 @@ import { InstagramComponent } from './register/account/instagram/instagram.compo
 import { GmailComponent } from './register/account/gmail/gmail.component';
 import { HotmailComponent } from './register/account/hotmail/hotmail.component';
 import { InpiComponent } from './register/account/inpi/inpi.component';
+import { ContactComponent } from './contact/contact.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { InpiComponent } from './register/account/inpi/inpi.component';
     GmailComponent,
     HotmailComponent,
     InpiComponent,
+    ContactComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
