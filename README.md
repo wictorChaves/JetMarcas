@@ -1,3 +1,5 @@
+<p align="right"><a target="_blank" href="https://www.buymeacoffee.com/tgTlPhj"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee">Buy me a coffee</a></p>
+
 <p><img src="https://raw.githubusercontent.com/wictorChaves/JetMarcas/master/src/assets/logo-top.png"></p>
 
 # Jet Marcas
